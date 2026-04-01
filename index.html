@@ -11,13 +11,12 @@
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <!-- NAVBAR -->
-  <nav>
+  <nav class="navbar">
     <div class="logo">MusicFinder</div>
-    <ul>
+    <ul class="nav-links">
       <li><a href="#concerts">Concerts</a></li>
       <li><a href="#venues">Venues</a></li>
       <li><a href="#merch">Merch</a></li>
@@ -27,6 +26,10 @@
 
   <!-- HERO -->
   <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="animated-notes">
+      <span>🎵</span><span>🎶</span><span>⚡</span><span>🎵</span><span>🎶</span>
+    </div>
     <div class="hero-content">
       <h1>Find Your Next Show 🎶</h1>
       <p>Concerts, venues, and music vibes near you</p>
@@ -38,19 +41,16 @@
   <section id="concerts" class="section">
     <h2>Concerts</h2>
     <div class="card-container">
-
       <div class="card">
         <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4">
         <h3>Artist Name</h3>
         <p>Date • Location</p>
       </div>
-
       <div class="card">
         <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063">
         <h3>Live Show</h3>
         <p>Date • Location</p>
       </div>
-
     </div>
   </section>
 
@@ -58,12 +58,10 @@
   <section id="venues" class="section alt">
     <h2>Venues</h2>
     <div class="card-container">
-
       <div class="card">
         <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc">
         <h3>Venue Name</h3>
       </div>
-
     </div>
   </section>
 
@@ -71,12 +69,10 @@
   <section id="merch" class="section">
     <h2>Merch</h2>
     <div class="card-container">
-
       <div class="card">
         <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
         <h3>Artist Merch</h3>
       </div>
-
     </div>
   </section>
 
@@ -84,7 +80,6 @@
   <section id="community" class="community">
     <h2>Join the Community 🎤</h2>
     <p>Stay updated on concerts & drops</p>
-
     <form>
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
